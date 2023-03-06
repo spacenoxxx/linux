@@ -622,13 +622,13 @@ eval "$(starship init bash)"
 
 #Autojump
 
-if [ -f "/usr/share/autojump/autojump.sh" ]; then
-	. /usr/share/autojump/autojump.sh
-elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-	. /usr/share/autojump/autojump.bash
-else
-	echo "can't found the autojump script"
-fi
+# if [ -f "/usr/share/autojump/autojump.sh" ]; then
+# 	. /usr/share/autojump/autojump.sh
+# elif [ -f "/usr/share/autojump/autojump.bash" ]; then
+# 	. /usr/share/autojump/autojump.bash
+# else
+# 	echo "can't found the autojump script"
+# fi
 
 # Update bashrc to git
 # cat ~/.bashrc > ~/github/UAL-VPN/bashrc && cat ~/.bash_history > ~/github/UAL-VPN/bash_history && lazygit bashrc-hist 
