@@ -1,10 +1,13 @@
 #!/bin/bash
 
+##Clone linux Repo
 mkdir -p ~/github
 cd ~/github 
 rm -rf linux
 git clone https://github.com/spacenoxxx/linux.git
 cd ~/github/linux 
+
+## Update baskrc and Prompt
 cp ~/.bashrc ~/.bashrc_default 
 cat chaitanya-bashrc > ~/.bashrc 
 cd tmp 
@@ -41,4 +44,3 @@ cd /tmp
 sudo rm -rf *.*
 sudo rm -rf *
 sudo reboot
-
