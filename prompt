@@ -1,6 +1,5 @@
 cd ~/github/linux \
 cp ~/.bashrc ~/.bashrc_default \
-cat chaitanya-bashrc \
 cat chaitanya-bashrc > ~/.bashrc \
 curl -sS https://starship.rs/install.sh | sh \
 mkdir -p ~/.local/share/fonts \
