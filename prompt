@@ -1,15 +1,17 @@
 #!/bin/bash
 
-cd ~/github/linux \
-cp ~/.bashrc ~/.bashrc_default \
-cat chaitanya-bashrc > ~/.bashrc \
-cd tmp \
-curl -sS https://starship.rs/install.sh | sh \
-mkdir -p ~/.local/share/fonts \
-cd ~/.local/share/fonts \
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip \
-unzip CascadiaCode.zip  \
-rm CascadiaCode.zip \
-rm readme.md \
-rm LICENSE \
+cd ~/github/linux 
+cp ~/.bashrc ~/.bashrc_default 
+cat chaitanya-bashrc > ~/.bashrc 
+cd tmp 
+curl -sS https://starship.rs/install.sh | sh 
+cat starship.toml > ~/.config/starship.toml
+mkdir -p ~/.local/share/fonts 
+cd ~/.local/share/fonts 
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip 
+unzip CascadiaCode.zip  
+rm CascadiaCode.zip 
+rm readme.md 
+rm LICENSE 
 fc-cache ~/.local/share/fonts
+source ~/.bashrc
