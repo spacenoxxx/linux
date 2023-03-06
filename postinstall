@@ -21,3 +21,10 @@ rm LICENSE
 fc-cache ~/.local/share/fonts
 source ~/.bashrc
 
+##XRDP
+cd /tmp && wget https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.6.zip
+unzip xrdp-installer-1.4.6.zip 
+chmod +x  ./xrdp-installer-1.4.6.sh
+./xrdp-installer-1.4.6.sh -s -l
+sudo reboot
+
