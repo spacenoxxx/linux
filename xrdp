@@ -5,4 +5,5 @@ sudo apt remove pipewire -y
 ./xrdp-installer-1.4.6.sh -s -l
 cd /tmp
 sudo rm -rf *.*
+sudo rm -rf *
 sudo reboot
