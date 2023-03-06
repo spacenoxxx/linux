@@ -1,4 +1,4 @@
-git clone https://github.com/spacenoxxx/UAL-VPN.git \
+cd ~/github/linux \
 cp ~/.bashrc ~/.bashrc_default \
 cat chaitanya-bashrc \
 cat chaitanya-bashrc > ~/.bashrc \
