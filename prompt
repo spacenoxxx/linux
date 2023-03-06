@@ -4,6 +4,7 @@ cd ~/github/linux
 cp ~/.bashrc ~/.bashrc_default 
 cat chaitanya-bashrc > ~/.bashrc 
 cd tmp 
+sudo apt install curl -y
 curl -sS https://starship.rs/install.sh | sh 
 cat starship.toml > ~/.config/starship.toml
 mkdir -p ~/.local/share/fonts 
