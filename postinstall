@@ -29,13 +29,15 @@ tar -xpvf GlobalProtect_tar-5.3.0.0-32.tar
 sudo ./install.sh 
 cd /tmp 
 sudo rm -rf *.*
+sudo rm -rf *
 
 ##XRDP
 cd /tmp && wget https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.6.zip
 unzip xrdp-installer-1.4.6.zip 
 chmod +x  ./xrdp-installer-1.4.6.sh
 ./xrdp-installer-1.4.6.sh -s -l
-cd /tmp 
+cd /tmp
 sudo rm -rf *.*
+sudo rm -rf *
 sudo reboot
 
