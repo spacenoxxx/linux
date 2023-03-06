@@ -1,4 +1,4 @@
-cd ~/github/linux \
+cd ~/github/linux
 cp ~/.bashrc ~/.bashrc_default \
 cat chaitanya-bashrc > ~/.bashrc \
 cd tmp \
