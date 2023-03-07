@@ -124,6 +124,8 @@ alias vi='nvim'
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
 alias awsgetuser='aws sts get-caller-identity --profile saml'
+alias vpnup='globalprotect connect -portal ual.gpcloudservice.com'
+alias vpndn='globalprotect disconnect'
 
 # Change directory aliases
 alias home='cd ~'
@@ -167,7 +169,8 @@ alias 777='chmod -R 777'
 alias h="history | grep "
 
 # Bashrc and Bash History backup and git commit
-alias bashback="user=$(id -u -n) && cat ~/.bashrc > ~/github/UAL-VPN/$user-bashrc && cat ~/.bash_history > ~/github/UAL-VPN/$user-bash_history && lazygit bash-update"
+alias lazygit='git add . -v && git commit -m "lazygit-update" && git push .' 
+alias bashback="cat ~/.bashrc > ~/github/UAL-VPN/chaitanya-bashrc && cat ~/.bash_history > ~/github/UAL-VPN/chaitanya-bash_history"
 
 
 # Search running processes
@@ -622,13 +625,13 @@ eval "$(starship init bash)"
 
 #Autojump
 
-# if [ -f "/usr/share/autojump/autojump.sh" ]; then
-# 	. /usr/share/autojump/autojump.sh
-# elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-# 	. /usr/share/autojump/autojump.bash
-# else
-# 	echo "can't found the autojump script"
-# fi
+if [ -f "/usr/share/autojump/autojump.sh" ]; then
+	. /usr/share/autojump/autojump.sh
+elif [ -f "/usr/share/autojump/autojump.bash" ]; then
+	. /usr/share/autojump/autojump.bash
+else
+	echo "can't found the autojump script"
+fi
 
 # Update bashrc to git
 # cat ~/.bashrc > ~/github/UAL-VPN/bashrc && cat ~/.bash_history > ~/github/UAL-VPN/bash_history && lazygit bashrc-hist 
