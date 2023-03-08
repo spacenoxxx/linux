@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ##Set Timezone and Clone linux Repo
-#echo "Set Timezone and Clone linux repo"
-#read -n 1 -r -s -p $'Press enter to continue...\n'
+echo "Set Timezone and Clone linux repo"
+read -n 1 -r -s -p $'Press enter to continue...\n'
 sudo timedatectl set-timezone Asia/Kolkata
 sudo apt install git vim neovim -y 
 mkdir -p ~/github
