@@ -6,41 +6,28 @@
 #cd ~/github 
 #rm -rf linux
 #git clone https://github.com/spacenoxxx/linux.git
-#cd ~/github/linux 
+#cd ~/github/linux
+#date && pwd
 
-## Update baskrc and Prompt
+## Update Bashrc and Prompt
 #cp ~/.bashrc ~/.bashrc_default 
-#cat chaitanya-bashrc > ~/.bashrc 
+#cat ~/github/linux/chaitanya-bashrc > ~/.bashrc 
 #cd /tmp 
-#sudo nala install curl zip unzip dialog -y
+#sudo apt install curl zip unzip dialog gh nala -y
+#sudo nala install sddm -y
+#sudo nala install kde-plasma-desktop -y
 #curl -sS https://starship.rs/install.sh | sh 
 #cat ~/github/linux/starship.toml > ~/.config/starship.toml
 #mkdir -p ~/.local/share/fonts 
 #cd ~/.local/share/fonts 
 #wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip 
 #unzip CascadiaCode.zip  
-#rm CascadiaCode.zip 
-#rm readme.md 
-#rm LICENSE 
+#rm ~/.local/share/fonts/CascadiaCode.zip 
+#rm ~/.local/share/fonts/readme.md 
+#rm ~/.local/share/fonts/LICENSE 
 #fc-cache ~/.local/share/fonts
 #source ~/.bashrc
 
-# Setup Bashrc and Prompt
-#cp ~/.bashrc ~/.bashrc_default 
-#cat chaitanya-bashrc > ~/.bashrc 
-#cd /tmp 
-#sudo nala install curl zip unzip -y
-#curl -sS https://starship.rs/install.sh | sh 
-#cat ~/github/linux/starship.toml > ~/.config/starship.toml
-#mkdir -p ~/.local/share/fonts 
-#cd ~/.local/share/fonts 
-#wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip 
-#unzip CascadiaCode.zip  
-#rm CascadiaCode.zip 
-#rm readme.md 
-#rm LICENSE 
-#fc-cache ~/.local/share/fonts
-#source ~/.bashrc
 
 ### Install GlobalProtect VPN Client ###
 #cd /tmp && 
@@ -62,12 +49,3 @@
 #sudo rm -rf *.*
 #sudo rm -rf *
 
-#cd /tmp && wget https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.6.zip
-#unzip xrdp-installer-1.4.6.zip 
-#chmod +x  ./xrdp-installer-1.4.6.sh
-#sudo nala remove pipewire -y
-#./xrdp-installer-1.4.6.sh -s -l
-#cd /tmp
-#sudo rm -rf *.*
-#sudo rm -rf *
-#sudo reboot
