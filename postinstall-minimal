@@ -1,35 +1,42 @@
 #!/bin/bash
 
-##Set Timezone and Clone linux Repo 
-#timedatectl set-timezone Asia/Kolkata
-#mkdir -p ~/github
-#cd ~/github 
-#rm -rf linux
-#git clone https://github.com/spacenoxxx/linux.git
-#cd ~/github/linux
-#date && pwd
+##Set Timezone and Clone linux Repo
+echo "Set Timezone and Clone linux repo"
+read -n 1 -r -s -p $'Press enter to continue...\n'
+sudo timedatectl set-timezone Asia/Kolkata
+sudo apt install git vim neovim -y 
+mkdir -p ~/github
+cd ~/github 
+rm -rf ~/github/linux
+git clone https://github.com/spacenoxxx/linux.git
+cd ~/github/linux
+date && pwd 
 
 ## Update Bashrc and Prompt
-#cp ~/.bashrc ~/.bashrc_default 
-#cat ~/github/linux/chaitanya-bashrc > ~/.bashrc 
-#cd /tmp 
-#sudo apt install curl zip unzip dialog gh nala -y
-#sudo nala install sddm -y
-#sudo nala install kde-plasma-desktop -y
-#curl -sS https://starship.rs/install.sh | sh 
-#cat ~/github/linux/starship.toml > ~/.config/starship.toml
-#mkdir -p ~/.local/share/fonts 
-#cd ~/.local/share/fonts 
-#wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip 
-#unzip CascadiaCode.zip  
-#rm ~/.local/share/fonts/CascadiaCode.zip 
-#rm ~/.local/share/fonts/readme.md 
-#rm ~/.local/share/fonts/LICENSE 
-#fc-cache ~/.local/share/fonts
-#source ~/.bashrc
-
+echo "Setting up Bashrc and Prompt"
+read -n 1 -r -s -p $'Press enter to continue...\n'
+cp ~/.bashrc ~/.bashrc_default 
+cat ~/github/linux/chaitanya-bashrc > ~/.bashrc 
+cd /tmp 
+sudo apt install curl zip unzip dialog gh nala -y
+sudo nala install sddm -y
+sudo nala install kde-plasma-desktop -y
+curl -sS https://starship.rs/install.sh | sh 
+mkdir -p ~/.local/share/fonts 
+cd ~/.local/share/fonts 
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip 
+unzip CascadiaCode.zip  
+rm ~/.local/share/fonts/CascadiaCode.zip 
+rm ~/.local/share/fonts/readme.md 
+rm ~/.local/share/fonts/LICENSE 
+fc-cache ~/.local/share/fonts
+mkdir -p ~/.config
+cat ~/github/linux/starship.toml > ~/.config/starship.toml
+source ~/.bashrc
 
 ### Install GlobalProtect VPN Client ###
+echo "Install GlobalProtect VPN Client"
+read -n 1 -r -s -p $'Press enter to continue...\n'
 #cd /tmp && 
 #wget --no-check-certificate "https://onedrive.live.com/download?cid=A462B49C5D0A6F08&resid=A462B49C5D0A6F08%21134156&authkey=APgPI6jl5OExR4A" --trust-server-names
 #mv 'GlobalProtect_tar-5.3.0.0-32.tar?download&psid=1' GlobalProtect_tar-5.3.0.0-32.tar
@@ -40,12 +47,14 @@
 #sudo rm -rf *
 
 ##XRDP
-#cd /tmp && wget https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.6.zip
-#unzip xrdp-installer-1.4.6.zip 
-#chmod +x  ./xrdp-installer-1.4.6.sh
-#sudo nala remove pipewire -y
-#./xrdp-installer-1.4.6.sh -s -l
-#cd /tmp
-#sudo rm -rf *.*
-#sudo rm -rf *
+echo "Install XRDP Setup"
+read -n 1 -r -s -p $'Press enter to continue...\n'
+cd /tmp && wget https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.6.zip
+unzip xrdp-installer-1.4.6.zip 
+chmod +x  ./xrdp-installer-1.4.6.sh
+sudo nala remove pipewire -y
+./xrdp-installer-1.4.6.sh -s -l
+cd /tmp
+sudo rm -rf *.*
+sudo rm -rf *
 
