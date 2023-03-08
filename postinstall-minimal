@@ -11,6 +11,7 @@ rm -rf ~/github/linux
 git clone https://github.com/spacenoxxx/linux.git
 cd ~/github/linux
 date && pwd 
+cd /tmp
 
 ## Update Bashrc and Prompt
 echo "Setting up Bashrc and Prompt"
