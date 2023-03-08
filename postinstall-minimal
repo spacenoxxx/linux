@@ -1,6 +1,7 @@
 #!/bin/bash
 
-##Clone linux Repo
+##Set Timezone and Clone linux Repo 
+#timedatectl set-timezone Asia/Kolkata
 #mkdir -p ~/github
 #cd ~/github 
 #rm -rf linux
