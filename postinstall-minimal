@@ -19,8 +19,6 @@ cp ~/.bashrc ~/.bashrc_default
 cat ~/github/linux/chaitanya-bashrc > ~/.bashrc 
 cd /tmp 
 sudo apt install curl zip unzip dialog gh nala -y
-sudo nala install sddm -y
-sudo nala install kde-plasma-desktop -y
 curl -sS https://starship.rs/install.sh | sh 
 mkdir -p ~/.local/share/fonts 
 cd ~/.local/share/fonts 
@@ -49,6 +47,8 @@ sudo rm -rf *
 ##XRDP
 echo "Install XRDP Setup"
 read -n 1 -r -s -p $'Press enter to continue...\n'
+sudo nala install sddm -y
+sudo nala install kde-plasma-desktop -y
 cd /tmp && wget https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.6.zip
 unzip xrdp-installer-1.4.6.zip 
 chmod +x  ./xrdp-installer-1.4.6.sh
