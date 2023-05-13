@@ -128,6 +128,31 @@ alias vpnup='globalprotect connect -portal ual.gpcloudservice.com'
 alias vpndn='globalprotect disconnect'
 alias awsual='/usr/bin/python3 /home/chaitanya/github/UAL-VPN/credentials.py'
 
+# Alias's to modified KUBECTL commands
+alias k='kubectl'
+alias kg='kubectl get'
+alias kgp='kubectl get pods'
+alias kgpa='kubectl get pods --all-namespaces'
+alias kgpaa='kubectl get pods --all-namespaces -o wide'
+alias kgsv='kubectl get svc'
+alias kgsva='kubectl get svc --all-namespaces'
+alias kgs='kubectl get sa'
+alias kgsa='kubectl get sa --all-namespaces'
+alias kgpv='kubectl get pv'
+alias kgpva='kubectl get pv --all-namespaces' 
+alias kgpvc='kubectl get pvc'
+alias kgpvca='kubectl get pvc --all-namespaces' 
+alias kc='kubectl create -f'
+alias kd='kubectl delete -f'
+alias kex='kubectl exec -it'
+alias kexb='kubectl exec -it busybox -- /bin/sh'
+alias ktest='kubectl run -i --tty --image busybox:1.28 dns-test --restart=Never --rm'
+alias kdp='kubectl describe pods'
+alias k-ho='/usr/bin/cp -rf /home/chaitanya/.kube/config.ho /home/chaitanya/.kube/config'
+alias k-ts='/usr/bin/cp -rf /home/chaitanya/.kube/config.ts /home/chaitanya/.kube/config'
+alias k-ul='/usr/bin/cp -rf /home/chaitanya/.kube/config.ul /home/chaitanya/.kube/config'
+
+
 # Change directory aliases
 alias home='cd ~'
 alias cd..='cd ..'
@@ -170,7 +195,6 @@ alias 777='chmod -R 777'
 alias h="history | grep "
 
 # Bashrc and Bash History backup and git commit
-alias lazygit='git add . -v && git commit -m "lazygit-update" && git push .' 
 alias bashback="cat ~/.bashrc > ~/github/UAL-VPN/chaitanya-bashrc && cat ~/.bash_history > ~/github/UAL-VPN/chaitanya-bash_history"
 
 
@@ -516,6 +540,11 @@ function whatsmyip ()
         echo "+-------------+-----------------+"
 }
 
+#Fast GIT commit
+gitpush ()
+{
+        git add -A;git commit -m "$1";git push
+}
 # View Apache logs
 apachelog ()
 {
@@ -636,3 +665,9 @@ eval "$(starship init bash)"
 
 # Update bashrc to git
 # cat ~/.bashrc > ~/github/UAL-VPN/bashrc && cat ~/.bash_history > ~/github/UAL-VPN/bash_history && lazygit bashrc-hist 
+source <(kubectl completion bash)
+complete -F __start_kubectl k
+
+if command -V kubectl-use >/dev/null; then
+  source <(kubectl-use -completion)
+fi

@@ -1,13 +1,17 @@
-format = """
-[](#000478)\
-$username\
-[](fg:#000478 bg:#33658A)\
-$directory\
-[](fg:#33658A bg:#9A348E)\
-$time\
-[ ](fg:#9A348E)\
-"""
+#format = """
+#[](#000478)\
+#$username\
+#[](fg:#000478 bg:#33658A)\
+#$directory\
+#[](fg:#33658A bg:#9A348E)\
+#$time\
+#[ ](fg:#9A348E)\
+#\n[ ](bold green)"""
 
+format = """
+[┌───────────────────────────────────────────>](fg:#0ec92e)
+[│](fg:#0ec92e) [](#000478)$username[](fg:#000478 bg:#33658A)$directory$rust$package[](fg:#33658A bg:#9A348E)$time[ ](fg:#9A348E)
+[└─>](fg:#0ec92e) """
 
 # 9A348E --> FF0000
 # 33658A --> 9A348E
@@ -126,3 +130,6 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#9A348E"
 format = '[ ♥ $time ]($style)'
+
+[custom.bashprompt]
+format = "┌──( $path )──( $jobs )\n└─$ "
