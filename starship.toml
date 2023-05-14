@@ -1,17 +1,22 @@
-#format = """
-#[](#000478)\
-#$username\
-#[](fg:#000478 bg:#33658A)\
-#$directory\
-#[](fg:#33658A bg:#9A348E)\
-#$time\
-#[ ](fg:#9A348E)\
-#\n[ ](bold green)"""
-
 format = """
 [┌───────────────────────────────────────────>](fg:#0ec92e)
-[│](fg:#0ec92e) [](#000478)$username[](fg:#000478 bg:#33658A)$directory$rust$package[](fg:#33658A bg:#9A348E)$time[ ](fg:#9A348E)
+[│](fg:#0ec92e) \
+[](#490980)\
+$username\
+[](fg:#490980 bg:#000000)\
+$hostname\
+[](fg:#000000 bg:#33658A)\
+$directory$rust$package\
+[](fg:#33658A bg:#9A348E)\
+$time\
+[ ](fg:#9A348E)
 [└─>](fg:#0ec92e) """
+
+#format = """
+#[┌───────────────────────────────────────────>](fg:#0ec92e)
+#[│](fg:#0ec92e) [](#000478)$username[](fg:#000478 bg:#33658A)$directory$rust$package[](fg:#33658A bg:#9A348E)$time[ ](fg:#9A348E)
+#[└─>](fg:#0ec92e) """
+#[](fg:#44658A bg:#33658A)\
 
 # 9A348E --> FF0000
 # 33658A --> 9A348E
@@ -25,9 +30,17 @@ format = """
 # and use the os module below
 [username]
 show_always = true
-style_user = "bg:#000478"
-style_root = "bg:#000478"
+style_user = "bg:#490980"
+style_root = "bg:#490980"
 format = '[$user ]($style)'
+disabled = false
+
+[hostname]
+ssh_symbol = '🌏'
+ssh_only = false
+style = "bg:##000000"
+format = "[$ssh_symbol]($style) [$hostname]($style)"
+trim_at = ".companyname.com"
 disabled = false
 
 # An alternative to the username module which displays a symbol that
@@ -38,8 +51,8 @@ disabled = true # Disabled by default
 
 [directory]
 style = "bg:#33658A"
-format = "[ $path ]($style)"
 truncation_length = 0
+format = "[ $path ]($style)"
 truncate_to_repo = false
 truncation_symbol = "…/"
 
@@ -131,5 +144,4 @@ time_format = "%R" # Hour:Minute Format
 style = "bg:#9A348E"
 format = '[ ♥ $time ]($style)'
 
-[custom.bashprompt]
-format = "┌──( $path )──( $jobs )\n└─$ "
+
