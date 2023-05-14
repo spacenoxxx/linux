@@ -49,4 +49,4 @@ source ~/.bashrc
 #curl -sL 'https://apt.netmaker.org/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/netclient.list
 #sudo apt update
 #sudo apt install netclient
-#eyJzZXJ2ZXIiOiJhcGkubmV0bWFrZXIudmVsdWRhbmRpLmNsaWNrIiwidmFsdWUiOiJaTUVFREFLU1RQTzZOS1ZWWEFFN0VCVVpJQTdFUFdJTCJ9
+#sudo netclient join -t eyJzZXJ2ZXIiOiJhcGkubmV0bWFrZXIudmVsdWRhbmRpLmNsaWNrIiwidmFsdWUiOiJaTUVFREFLU1RQTzZOS1ZWWEFFN0VCVVpJQTdFUFdJTCJ9
