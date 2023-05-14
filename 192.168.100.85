@@ -8,21 +8,21 @@
 #cd ~/github/linux 
 
 ## Update baskrc and Prompt
-cp ~/.bashrc ~/.bashrc_default 
-cat chaitanya-bashrc > ~/.bashrc 
-cd /tmp 
-sudo nala install curl zip unzip -y
-curl -sS https://starship.rs/install.sh | sh 
-cat ~/github/linux/starship.toml > ~/.config/starship.toml
-mkdir -p ~/.local/share/fonts 
-cd ~/.local/share/fonts 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip 
-unzip CascadiaCode.zip  
-rm CascadiaCode.zip 
-rm readme.md 
-rm LICENSE 
-fc-cache ~/.local/share/fonts
-source ~/.bashrc
+#cp ~/.bashrc ~/.bashrc_default 
+#cat chaitanya-bashrc > ~/.bashrc 
+#cd /tmp 
+#sudo nala install curl zip unzip -y
+#curl -sS https://starship.rs/install.sh | sh 
+#cat ~/github/linux/starship.toml > ~/.config/starship.toml
+#mkdir -p ~/.local/share/fonts 
+#cd ~/.local/share/fonts 
+#wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip 
+#unzip CascadiaCode.zip  
+#rm CascadiaCode.zip 
+#rm readme.md 
+#rm LICENSE 
+#fc-cache ~/.local/share/fonts
+#source ~/.bashrc
 
 ### Install GlobalProtect VPN Client ###
 #cd /tmp && 
