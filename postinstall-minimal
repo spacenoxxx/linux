@@ -70,3 +70,4 @@ sudo apt install brave-browser -y
 ### Post first reboot
 #gh auth login
 #ssh -i ~/.ssh/EC2-PRIV-01.pem -A -t ec2-user@13.235.94.211 ssh -A -t ec2-user@10.0.2.8
+#eyJzZXJ2ZXIiOiJhcGkubmV0bWFrZXIudmVsdWRhbmRpLmNsaWNrIiwidmFsdWUiOiJPOFNUUUlwZ0FnZ25TaTlSOFZrTXF3dEx5ak55VVYxQyJ9
