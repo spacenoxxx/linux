@@ -1,0 +1,54 @@
+[global_config]
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminalShot
+  always_split_with_profile = True
+[keybindings]
+  go_left = <Primary>Left
+  go_right = <Primary>Right
+  copy = <Primary><Shift>c
+  paste = <Primary>v
+[profiles]
+  [[default]]
+    background_color = "#0d1c2e"
+    cursor_color = "#aaaaaa"
+    font = CaskaydiaCove NFM Bold 16
+    foreground_color = "#f9f06b"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    bold_is_bright = True
+    copy_on_selection = True
+  [[chaitanya]]
+    background_color = "#0d1c2e"
+    cursor_color = "#aaaaaa"
+    font = CaskaydiaCove NFM Bold 16
+    foreground_color = "#f9f06b"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    bold_is_bright = True
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+  [[chaitanya]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 672:301
+      maximised = False
+      fullscreen = False
+      size = 574, 403
+      title = /bin/bash
+      last_active_term = 83235e4b-1ee0-4299-a32a-f6c1f75d5c19
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = default
+      uuid = 83235e4b-1ee0-4299-a32a-f6c1f75d5c19
+[plugins]
