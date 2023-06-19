@@ -1,1 +1,1 @@
-N4C.BBT.PAX.UTILITY.utility.pax.services
+N4C.BBT.PAX.ADAPTER.adapter.activemq.msk
