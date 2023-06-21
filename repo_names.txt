@@ -1,1 +1,1 @@
-N4C.BBT.PAX.ADAPTER.adapter.ems.kafka
+N4C.BBT.ONPREM.API.services.HERMES.FlifoEnrichment
